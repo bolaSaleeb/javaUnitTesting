@@ -1,0 +1,19 @@
+package javaUnitTesting;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class testing {
+
+	@Test
+	void test() {
+		SimpleCalculator obj1 = new SimpleCalculator();
+		
+		assertEquals(8,obj1.add(3, 5));
+		assertEquals(8,obj1.add(3, 7));
+		assertEquals(12,obj1.add(3, 9));
+	}
+
+}

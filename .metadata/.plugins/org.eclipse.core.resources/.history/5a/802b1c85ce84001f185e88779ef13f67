@@ -1,0 +1,24 @@
+package javaUnitTesting;
+
+public class SimpleCalculator {
+	public int add(int numberA, int numberB) {
+		return numberA+numberB;
+	}
+	
+	public int square(int n) {
+		return n*n;
+	}	
+	
+	public char determineLetterGrade(int numberGrade) {
+		if(numberGrade <0) {
+			throw new IllegalArgumentException("Number grade cannot be less than zero");
+		}
+		else if(numberGrade <60) {
+			return 'F';
+		}
+		else if(numberGrade <70) {
+			return 'D';
+		}
+		return 'A';
+	}
+}

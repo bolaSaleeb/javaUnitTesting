@@ -1,0 +1,10 @@
+package javaUnitTesting;
+
+import org.junit.platform.suite.api.SelectClasses;
+import org.junit.platform.suite.api.Suite;
+
+@Suite
+@SelectClasses({ calculatorTest.class, testing.class })
+public class AllTests {
+
+}

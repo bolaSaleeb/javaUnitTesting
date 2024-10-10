@@ -1,0 +1,38 @@
+package javaUnitTesting;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.jupiter.api.Test;
+import org.junit.platform.suite.api.SelectClasses;
+import org.junit.platform.suite.api.Suite;
+
+@Suite
+@SelectClasses({ calculatorTest.class, testing.class })
+public class AllTests {
+	@Test
+	void test() {
+		SimpleCalculator obj1 = new SimpleCalculator();
+		
+		assertEquals(8,obj1.add(3, 5));
+	}
+	@Test
+	void test2() {
+		SimpleCalculator obj1 = new SimpleCalculator();
+		
+		assertEquals(8,obj1.add(3, 5));
+	}
+	@Test
+	void test3() {
+		SimpleCalculator obj1 = new SimpleCalculator();
+		
+		assertEquals(7,obj1.add(3, 5));
+	}
+	
+	@Test
+	void test5() {
+		SimpleCalculator obj1 = new SimpleCalculator();
+		
+		assertEquals('F',obj1.determineLetterGrade(60));
+	}
+	
+}

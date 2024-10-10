@@ -1,0 +1,31 @@
+package javaUnitTesting;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class calculatorTest {
+
+	@Test
+	public void test() {
+		SimpleCalculator obj1 = new SimpleCalculator();
+		int output = obj1.add(3, 5);
+		assertEquals(8,output);
+		
+	}
+	
+	public void test2() {
+		SimpleCalculator obj1 = new SimpleCalculator();
+		int output = obj1.add(3, 5);
+		assertEquals(8,output);
+		
+	}
+	
+	public void test3() {
+		SimpleCalculator obj1 = new SimpleCalculator();
+		int output = obj1.add(3, 5);
+		assertEquals(8,output);
+		
+	}
+
+}

@@ -1,0 +1,45 @@
+package javaUnitTesting;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class testing {
+
+	@Test
+	void twoPlusTwoShouldEqual4() {
+		SimpleCalculator calculator = new SimpleCalculator();
+		
+		assertEquals(4,calculator.add(2, 2));
+	}
+	
+	
+	void test2() {
+		SimpleCalculator obj1 = new SimpleCalculator();
+		
+		assertEquals(8,obj1.add(3, 5));
+	}
+	
+	
+	void test3() {
+		SimpleCalculator obj1 = new SimpleCalculator();
+		
+		assertEquals(8,obj1.add(3, 5));
+	}
+	
+	
+	void test4() {
+		SimpleCalculator obj1 = new SimpleCalculator();
+		
+		assertEquals(8,obj1.add(3, 5));
+	}
+	
+	
+	void test5() {
+		SimpleCalculator obj1 = new SimpleCalculator();
+		
+		assertEquals('F',obj1.determineLetterGrade(60));
+	}
+
+}

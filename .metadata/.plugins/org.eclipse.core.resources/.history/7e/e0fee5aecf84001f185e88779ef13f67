@@ -1,0 +1,16 @@
+package javaUnitTesting;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class GraderTest {
+
+	@Test
+	void fiftyNineShouldReturnF() {
+		Grader grader = new Grader();
+		
+		assertEquals('F', grader.determineLetterGrade(59));
+	}
+
+}
